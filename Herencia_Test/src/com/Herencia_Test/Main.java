@@ -3,21 +3,22 @@ package com.Herencia_Test;
 public class Main {
 
     public static void main(String[] args) {
-       //Main main = new Main(); //creas un objeto del tipo de la clase principal
-        //super.getData();
-        Dia Lunes = new Dia("Lunes", 20, "Hamburguesas", 345.45f, 3, 6);
-        Comida comida = new Comida();
-        Comida Jueves = Lunes;
-        Jueves.getName();
-        Lunes.getName(); //overriding
-        comida.getName();
-        /*Dia Martes = new Dia();
-        Dia Miercoles = Lunes;
-        Martes.get().hora = 6; //llama al metodo get, printa y luego devuelve la instancia de la clase donde se modifica el valor de hora
-        Miercoles.hora = 15; //al copiar el objeto lunes al miercoles, si modificas el valor de miercoles, tambien se modifica el de lunes
-        Lunes.printData();
-        Martes.printData();
-        Miercoles.printData();*/
+
+        DosDimensiones formas[]=new DosDimensiones[4];
+        formas[0]=new Triangulo("Estilo 1",8.0,12.0);
+        formas[1]=new Rectangulo(10);
+        formas[2]=new Rectangulo(10,4);
+        formas[3]= new Triangulo(7.0);
+        //formas[x] = new DosDimensiones(); this won't work because DosDimensiones is an abstract class so you can't initialize an object
+
+
+
+        for (int i=0; i<formas.length;i++){
+            System.out.println("El objeto es: "+formas[i].getName());
+            formas[i].printData();
+            System.out.println("El área es: "+formas[i].area());
+            System.out.println();
+        }
 
 
     }
