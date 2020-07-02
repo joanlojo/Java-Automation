@@ -28,6 +28,10 @@ public abstract class DosDimensiones{
         base= dd.base;
         name = dd.name;
     }
+    //you can't override a final method, so the subclasses won't be able to override this
+    final void PrivateMethod(){
+        System.out.print("Esto es un metodo final");
+    }
     //because the vars are private, it's very common and important to define the setters and getter, to be able to access to the vars
     //and modify them from where ever I want, because the methods are public or default in this case
     //Getters
@@ -42,9 +46,12 @@ public abstract class DosDimensiones{
         return this;
     }
     //overriding a method from the super class
-    void printData(){
+    public void printData(){
         //with this and the getters, I can acces to the vars of the object, this will be the dimensions of a rectangulo
         System.out.println("La base y la altura son: "+ this.getBase()+" y "+ this.getHeight() + " El objeto es: " + this.get());
+        System.out.println("El objeto es: "+this.getName());
+        System.out.println("El área es: "+this.area());
+        System.out.println();
     }
     //Ahora, area() es abstracta
     abstract double area();

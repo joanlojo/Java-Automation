@@ -9,14 +9,14 @@ public class Triangulo extends DosDimensiones{
         style ="ninguno";
     }
     //constructor with parameters
-    Triangulo(String style, double base, double height){
+    public Triangulo(String style, double base, double height){
         //super calls at the constructor of the superclass, this is the first that is executed,
         //that's why it has to be on the first line
         super(base,height,"Triangulo");
         this.style = style ;
     }
     //Constructor con un argumento
-    Triangulo(double x){
+    public Triangulo(double x){
         super(x,"Triangulo"); //Llama al constuctor de la superclase
         style ="Estilo 1";
     }
@@ -31,9 +31,12 @@ public class Triangulo extends DosDimensiones{
         return getHeight()*getBase()/2;
     }
     //overriding a method from the super class
-    void printData(){
+    public void printData(){
         //with this and the getters, I can acces to the vars of the object, this will be the dimensions of a rectangulo
         System.out.println("La base y la altura son: "+ this.getBase()+" y "+ this.getHeight() + " . " + this.get());
+        System.out.println("El objeto es: "+ this.getName());
+        System.out.println("El área es: "+ this.area());
+        System.out.println();
         mostrarEstilo();
     }
     void mostrarEstilo(){
