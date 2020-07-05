@@ -3,11 +3,6 @@ package Package_Test;
 import com.Herencia_Test.*;
 
 public class Main{
-    int test1 = 1;
-    private int test2 = 2;
-    protected int test3 = 3;
-    public int test4 = 4;
-
     public static void main(String[] args) {
 
         DosDimensiones formas[]=new DosDimensiones[4];

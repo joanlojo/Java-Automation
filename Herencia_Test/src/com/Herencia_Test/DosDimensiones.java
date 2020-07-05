@@ -1,14 +1,21 @@
 package com.Herencia_Test;
 
+import Interfaces.*;
+
 //because I have a method that is abstract, I have to declare the superclass as abstract too
-public abstract class DosDimensiones{
+public abstract class DosDimensiones implements Interfaces{
     private double base;
     private double height;
     private String name;
 
+    int test1 = 1;
+    private int test2 = 2;
+    protected int test3 = 3;
+    public int test4 = 4;
+
     //Constructor por defecto
     DosDimensiones(){
-        base = height = 0.0;
+        base = height = ddfaultvalue;
         name = "ninguno";
     }
     //Parametrizando constructor
@@ -45,15 +52,16 @@ public abstract class DosDimensiones{
     DosDimensiones get(){
         return this;
     }
-    //overriding a method from the super class
-    public void printData(){
-        //with this and the getters, I can acces to the vars of the object, this will be the dimensions of a rectangulo
-        System.out.println("La base y la altura son: "+ this.getBase()+" y "+ this.getHeight() + " El objeto es: " + this.get());
+
+    //because this is an abstract class, I don't need to implement the method printData(), declared in the interface
+    //with this and the getters, I can acces to the vars of the object, this will be the dimensions of a rectangulo
+    /*public void printData(){
+        /*System.out.println("La base y la altura son: "+ this.getBase()+" y "+ this.getHeight() + " El objeto es: " + this.get());
         System.out.println("El objeto es: "+this.getName());
         System.out.println("El área es: "+this.area());
         System.out.println();
-    }
-    //Ahora, area() es abstracta
+    }*/
+
     abstract double area();
     //with this, you declare that the sub classes will have to/ will be able to implement a method called area
     //but you make it abstact because the superclass doesn't have to/can't implement it, so you just defined

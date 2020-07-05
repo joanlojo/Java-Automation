@@ -3,8 +3,9 @@ package com.Herencia_Test;
 public class Triangulo extends DosDimensiones{
     private String style;
 
+
     //Constructor por defecto
-    Triangulo(){
+    public Triangulo(){
         super();
         style ="ninguno";
     }
@@ -31,6 +32,8 @@ public class Triangulo extends DosDimensiones{
         return getHeight()*getBase()/2;
     }
     //overriding a method from the super class
+    //because it's a method implemented from an interface,
+    //you have to declare the method or make the class abstract and you have to declare the method public
     public void printData(){
         //with this and the getters, I can acces to the vars of the object, this will be the dimensions of a rectangulo
         System.out.println("La base y la altura son: "+ this.getBase()+" y "+ this.getHeight() + " . " + this.get());
