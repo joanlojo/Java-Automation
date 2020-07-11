@@ -9,7 +9,8 @@ public class Methods { //to create more clases appart from the main one, the one
     int[] test = new int [10]; //manera de declarar el tamaño concreto de un array
     private int med = 2;
     private int b = 5;
-    static int globalValue;
+    final int CONSTANTEVALUE;
+    static final int CONSTANTFINALVALUE;
     int min = (med<b)?med:b; //si a<b, el valor de min sera = a, si no se cumple, el valor de min = b
 
     static int maxAge = 99; //with static variables you can acces to them from anywhere wihtout needing to create an instance of the class
@@ -19,7 +20,11 @@ public class Methods { //to create more clases appart from the main one, the one
     //static block
     //it's something that is executed when the class is loaded for the first time
     static {
-        globalValue = 15;
+        CONSTANTFINALVALUE = 15;
+    }
+    //bloque para incializar una var final
+    {
+        CONSTANTEVALUE = 15;
     }
 
     static int GetDiv(int a){
