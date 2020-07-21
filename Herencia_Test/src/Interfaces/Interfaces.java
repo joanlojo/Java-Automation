@@ -15,6 +15,6 @@ public interface Interfaces {
     //all the other code. Usually the interfaces are used to define the what and not the how, but if I need that, I can with "default" key
     //Also with the defautl methods, you don't need to implement/use them in the sub classes
     default void showError(){
-        System.out.print("Error");
+        System.out.print("Default Error");
     }
 }

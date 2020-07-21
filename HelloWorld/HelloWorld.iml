@@ -7,6 +7,40 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" exported="" name="java-client-7.3.0" level="project" />
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../java-client-7.3.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../Lib_Test/byte-buddy-1.8.15.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Lib_Test/client-combined-3.141.59.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Lib_Test/commons-exec-1.3.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Lib_Test/commons-lang3-3.10-tests.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Lib_Test/commons-lang3-3.10.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Lib_Test/guava-25.0-jre.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Lib_Test/java-client-7.3.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Lib_Test/okhttp-3.11.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Lib_Test/okio-1.14.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Lib_Test/selenium-server-standalone-3.141.59.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Lib_Test/testng-7.1.0.jar!/" />
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar://$MODULE_DIR$/../../Lib_Test/commons-lang3-3.10-javadoc.jar!/" />
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/../../Lib_Test/client-combined-3.141.59-sources.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Lib_Test/commons-lang3-3.10-sources.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Lib_Test/commons-lang3-3.10-test-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
   </component>
 </module>
-

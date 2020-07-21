@@ -47,4 +47,8 @@ public class Rectangulo extends DosDimensiones {
     double area(){
         return getBase()* getHeight();
     }
+
+    public void showError(){
+        System.out.println("Error Rectangulo");
+    }
 }
