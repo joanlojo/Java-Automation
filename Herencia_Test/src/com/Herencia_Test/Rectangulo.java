@@ -33,16 +33,16 @@ public class Rectangulo extends DosDimensiones {
     public void printData(){
         //with this and the getters, I can acces to the vars of the object, this will be the dimensions of a rectangulo
         //with super.getBase(), I could acces to the dimensions of the superclass, in this case dos dimensiones
-
-        System.out.println("La base y la altura son: "+ this.getBase()+" y "+ this.getHeight() + " . " + this.get());
-        System.out.println("El objeto es: "+ this.getName());
-        System.out.println("El área es: "+ this.area());
-        System.out.println();
         if (esCuadrado()) {
             System.out.println("Es Cuadrado");
         }else{
             System.out.println("NO es Cuadrado");
         }
+        System.out.println("La base y la altura son: "+ this.getBase()+" y "+ this.getHeight() + " . " + this.get());
+        System.out.println("El objeto es: "+ this.getName());
+        System.out.println("El área es: "+ this.area());
+        System.out.println();
+
     }
     double area(){
         return getBase()* getHeight();

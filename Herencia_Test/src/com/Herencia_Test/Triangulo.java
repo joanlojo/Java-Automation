@@ -36,11 +36,11 @@ public class Triangulo extends DosDimensiones{
     //you have to declare the method or make the class abstract and you have to declare the method public
     public void printData(){
         //with this and the getters, I can acces to the vars of the object, this will be the dimensions of a rectangulo
+        mostrarEstilo();
         System.out.println("La base y la altura son: "+ this.getBase()+" y "+ this.getHeight() + " . " + this.get());
         System.out.println("El objeto es: "+ this.getName());
         System.out.println("El área es: "+ this.area());
         System.out.println();
-        mostrarEstilo();
     }
     void mostrarEstilo(){
         System.out.println("El triángulo tiene: "+ style);
